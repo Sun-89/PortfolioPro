@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kevin Surcin — Développeur Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+
+</head>
+<body>
+
+    <!-- Custom cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- ─── NAV ─── -->
+    <nav>
+        <a href="#hero" class="nav-logo">Sun</a>
+        <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ─── HERO ─── -->
+    <div id="hero">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+
+        <!-- 
+        ╔══════════════════════════════════════════════════════════╗
+        ║  ZONE SPLINE — Colle ton <spline-viewer> ici             ║
+        ║  1. Va sur spline.design                                 ║
+        ║  2. Crée ta scène avec ton avatar                        ║
+        ║  3. Exporte → "Viewer" → copie le tag <spline-viewer>   ║
+        ║  4. Remplace le bloc #spline-placeholder par ton tag     ║
+        ╚══════════════════════════════════════════════════════════╝
+        -->
+        <div id="spline-container">
+        <div id="spline-placeholder">
+        </div>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.88/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/iIKdQhPCecdIPdIY/scene.splinecode" background="transparent"></spline-viewer>
+        </div>
+
+        <div class="hero-content">
+        <div class="hero-tag">Disponible pour missions freelance</div>
+        <h1 class="hero-name">Kevin<br><span class="highlight">Surcin</span></h1>
+        <p class="hero-sub">Développeur Web — Interfaces modernes & expériences immersives</p>
+        <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">Voir mes projets →</a>
+            <a href="#contact" class="btn btn-ghost">Me contacter</a>
+        </div>
+        </div>
+
+        <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+        </div>
+    </div>
+
+    <!-- ─── ABOUT ─── -->
+    <section id="about">
+        <div class="about-text reveal">
+        <p class="section-label">// 01 — À propos</p>
+        <h2 class="section-title">Passionné par<br>le web <span style="color:var(--accent2)">moderne</span></h2>
+        <p>Développeur web avec une vraie obsession pour les <strong>interfaces soignées</strong> et les expériences utilisateur qui marquent. Je construis des produits qui allient performance technique et esthétique ambitieuse.</p>
+        <p>Que ce soit un site vitrine, une app web complexe ou un portfolio 3D interactif, je m'assure que chaque pixel a du sens.</p>
+        <div class="about-stats">
+            <div class="stat"><div class="stat-num">Junior</div><div class="stat-label">Niveau d'expérience</div></div>
+            <div class="stat"><div class="stat-num">3</div><div class="stat-label">Projets livrés</div></div>
+            <div class="stat"><div class="stat-num">3</div><div class="stat-label">Clients satisfaits</div></div>
+            <div class="stat"><div class="stat-num">∞</div><div class="stat-label">Café consommé</div></div>
+        </div>
+        </div>
+        <div class="about-visual reveal" style="transition-delay:0.15s">
+        <div class="about-card">
+            <div class="about-card-head">
+            <div class="about-avatar">🧑‍💻</div>
+            <div>
+                <div class="about-name">Kevin Surcin</div>
+                <div class="about-role">Développeur Web Full-Stack</div>
+            </div>
+            </div>
+            <p style="font-size:0.82rem;color:var(--muted);line-height:1.7;">Basé en France, je travaille sur des projets web de A à Z — du design à la mise en production. Toujours en quête de nouvelles technologies pour pousser les limites du possible.</p>
+            <div class="about-tools">
+            <span class="tool-tag">HTML</span>
+            <span class="tool-tag">CSS</span>
+            <span class="tool-tag">JavaScript</span>
+            <span class="tool-tag">TypeScript</span>
+            <span class="tool-tag">Spline</span>
+            <span class="tool-tag">Figma</span>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ─── PROJECTS ─── -->
+    <section id="projects">
+        <p class="section-label reveal">// 02 — Projets</p>
+        <h2 class="section-title reveal">Ce que j'ai<br><span style="color:var(--accent2)">construit</span></h2>
+
+        <div class="spline-hint reveal">
+        💡 Remplace ces cartes par <strong>tes vrais projets</strong> — modifie les titres, descriptions, couleurs de fond et liens dans le HTML.
+        </div>
+
+        <div class="projects-grid">
+        <div class="project-card reveal">
+            <div class="project-thumb">🌞</div>
+            <div class="project-body">
+            <div class="project-tags"><span class="project-tag">JavaScript</span><span class="project-tag">Next.js</span></div>
+            <div class="project-title">App Meteo</div>
+            <p class="project-desc">Application météo en temps réel avec interface utilisateur moderne.</p>
+            <div class="project-links">
+                <a href="https://weather-app-olive-one-99.vercel.app" class="project-link">↗ Live</a>
+                <a href="https://github.com/Sun-89/weather-app" class="project-link">⌥ GitHub</a>
+            </div>
+            </div>
+        </div>
+        <div class="project-card reveal" style="transition-delay:0.1s">
+            <div class="project-thumb">📊</div>
+            <div class="project-body">
+            <div class="project-tags"><span class="project-tag">Next.js</span><span class="project-tag">Tailwind</span></div>
+            <div class="project-title">Analytics Dashboard</div>
+            <p class="project-desc">Dashboard de visualisation de données en temps réel avec graphiques interactifs.</p>
+            <div class="project-links">
+                <a href="#" class="project-link">↗ Live</a>
+                <a href="#" class="project-link">⌥ GitHub</a>
+            </div>
+            </div>
+        </div>
+        <div class="project-card reveal" style="transition-delay:0.2s">
+            <div class="project-thumb"></div>
+            <div class="project-body">
+            <div class="project-tags"><span class="project-tag"></span><span class="project-tag"></span></div>
+            <div class="project-title"></div>
+            <p class="project-desc"></p>
+            <div class="project-links">
+                <a href="#" class="project-link">↗ Live</a>
+                <a href="#" class="project-link">⌥ GitHub</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ─── SKILLS ─── -->
+    <section id="skills">
+        <p class="section-label reveal">// 03 — Compétences</p>
+        <h2 class="section-title reveal">Mon <span style="color:var(--accent2)">arsenal</span><br>technique</h2>
+
+        <div class="skills-layout">
+        <div class="reveal">
+            <div class="skill-group-title">Front-end</div>
+            <div class="skill-list">
+            <div class="skill-item">
+                <div class="skill-head"><span>HTML / CSS</span><span class="skill-pct">95%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-head"><span>JavaScript</span><span class="skill-pct">85%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-head"><span>React / Next.js</span><span class="skill-pct">80%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+            </div>
+            </div>
+        </div>
+
+        <div class="reveal" style="transition-delay:0.15s">
+            <div class="skill-group-title">Back-end & Outils</div>
+            <div class="skill-list">
+            <div class="skill-item">
+                <div class="skill-head"><span>PHP</span><span class="skill-pct">68%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:68%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-head"><span>SQL / MongoDB</span><span class="skill-pct">75%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-head"><span>Git / GitHub</span><span class="skill-pct">90%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-head"><span>Figma / Design</span><span class="skill-pct">95%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div>
+            </div>
+            </div>
+        </div>
+
+        <div class="reveal" style="transition-delay:0.1s; grid-column: 1 / -1;">
+            <div class="skill-group-title">Technologies maîtrisées</div>
+            <div class="tech-cloud">
+            <div class="tech-badge"><span class="tech-icon">⚛️</span> React</div>
+            <div class="tech-badge"><span class="tech-icon">▲</span> Next.js</div>
+            <div class="tech-badge"><span class="tech-icon">🟨</span> JavaScript</div>
+            <div class="tech-badge"><span class="tech-icon">🟢</span> Node.js</div>
+            <div class="tech-badge"><span class="tech-icon">🎨</span> CSS</div>
+            <div class="tech-badge"><span class="tech-icon">🌀</span> Spline</div>
+            <div class="tech-badge"><span class="tech-icon">🐙</span> Git</div>
+            <div class="tech-badge"><span class="tech-icon">🐳</span> Docker</div>
+            <div class="tech-badge"><span class="tech-icon">▶️</span> Vercel</div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section id="contact">
+        <div class="contact-inner">
+        <p class="section-label reveal">// 04 — Contact</p>
+        <h2 class="section-title reveal">Travaillons<br><span style="color:var(--accent2)">ensemble</span></h2>
+        <p class="contact-sub reveal">Un projet en tête ? Je suis disponible pour des missions freelance et des collaborations.</p>
+        <div class="contact-card reveal">
+            <a href="mailto:Surcin.kevin@outlook.fr" class="contact-email">Surcin.kevin@outlook.fr</a>
+            <div class="social-links">
+            <a href="https://github.com/Sun-89" class="social-link">⬡ GitHub</a>
+            <a href="#" class="social-link">in LinkedIn</a>
+            <a href="#" class="social-link">🎨 Dribbble</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer>
+        <span>© 2026 Kevin Surcin — Tous droits réservés</span>
+        <span>Conçu & développé avec ♥</span>
+    </footer>
+
+<script src="index.js"></script>
+</body>
+</html>
